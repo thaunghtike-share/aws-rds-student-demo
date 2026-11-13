@@ -1,0 +1,96 @@
+:root {
+    --aws-navy: #182939;
+    --aws-orange: #ff9900;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f7fa;
+    color: #243447;
+}
+
+.app-header {
+    background: linear-gradient(125deg, var(--aws-navy), #274b69);
+    color: #fff;
+}
+
+.eyebrow {
+    color: var(--aws-orange);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.status-bar {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: .75rem;
+    padding: .8rem 1rem;
+}
+
+.status-dot {
+    width: .65rem;
+    height: .65rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+.status-dot.connected {
+    background: #198754;
+    box-shadow: 0 0 0 .2rem rgba(25, 135, 84, .14);
+}
+
+.status-dot.disconnected {
+    background: #dc3545;
+    box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .14);
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.form-control {
+    padding: .7rem .8rem;
+}
+
+.form-control:focus {
+    border-color: var(--aws-orange);
+    box-shadow: 0 0 0 .2rem rgba(255, 153, 0, .18);
+}
+
+.btn-primary {
+    background: #146eb4;
+    border-color: #146eb4;
+    font-weight: 600;
+    padding: .7rem 1rem;
+}
+
+.btn-primary:hover {
+    background: #0d5b98;
+    border-color: #0d5b98;
+}
+
+.table > :not(caption) > * > * {
+    padding: .9rem 1rem;
+}
+
+.table thead th {
+    background: #edf2f7;
+    color: #5a6877;
+    font-size: .74rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.student-id {
+    color: #146eb4;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-weight: 700;
+}
+
+.empty-state {
+    color: #7b8794;
+}
